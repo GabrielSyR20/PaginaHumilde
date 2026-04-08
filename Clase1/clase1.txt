@@ -1,0 +1,38 @@
+programacion web
+front, back, 
+Javascript
+html
+typescript
+Grupo de 2 personas
+11 de mayo 1er parcial
+22 de junio 2do parcial
+19 de junio o 26 de junio entrega de trabajo practico
+promocion mayor de 6 en los 3
+uso excesivo de IA baja la nota
+el trabajo es grupal pero las notas son individuales
+primera parte es frontend y la segunda backend
+
+Auto Close Tag
+Auto Rename Tag
+Live Server
+Prettier
+extensiones
+
+PAGINAS ESTATICAS no cambian a pesar de entres a lugares
+Paginas dinamicas que van cambiando a travez que se genera un nuevo codigo
+
+HTML es la estructura de la pagina web
+CSS es la apariencia y estilo de la pagina web
+
+
+! + enter
+
+https://www.w3schools.com/tags/tag_meta.asp
+https://web.dev/learn/performance/image-performance?hl=es-419
+
+mdm audio
+mdm video
+mdm nav
+mdm table
+
+Buscar una pag web 

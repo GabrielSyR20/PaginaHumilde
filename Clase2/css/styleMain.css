@@ -1,0 +1,56 @@
+/*
+Ejemplo de estilos CSS para el archivo etiquetas.html
+cambia el color de los párrafos a rojo y el color de los encabezados h2 a verde
+*/
+p{
+    color: red;
+}
+
+h2{
+    color: green;
+}
+
+/*DEFINCIONES
+SELECTOR/SELECTORES: es lo que indica a que elemnto o elementos 
+apuntan las propiedades CSS.
+Es lo que esta antes de las llaves.
+
+PROPIEDADES: ¿Que es lo que quiero modificar 
+del elemento o elementos a los que apunta el selector?
+de que color quiero el texto, el fondo, el tamaño de la letra, etc.
+Es lo que esta dentro de las llaves.
+
+VALORES: */
+
+/*TIPOS DE SELECTORES
+- de etiquetas(TODAS las etiquetas del mismo tipo)
+p{}
+div{}
+etc.*/
+h1{
+    color: orange;
+    background-color: black;
+    text-align: center;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 2em;
+    font-weight:400;
+    text-decoration: underline wavy red;
+    /*. . . .*/
+}
+/*
+- Por ID
+#parrafo-3
+#id
+#chat
+
+Por ID es solo para un elemento,
+no se puede repetir el mismo ID en varios elementos.
+*/
+#parrafo-3{
+    color: blue;
+    /*. . . .*/
+}
+
+.texto-purple{
+    color: purple;
+}

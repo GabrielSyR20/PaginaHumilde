@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Formularios</title>
+  </head>
+  <body>
+    <header>
+      <h1>Formularios</h1>
+      <h2>30 - 03 - 2026</h2>
+      <hr />
+    </header>
+
+    <!-- Formularios -->
+    <!-- 1. Ingresar datos -->
+    <!-- Texto, mail, contraseñas, checks, a seleccionar, imagenes, archivos, captcha -->
+    <!-- 2. Validar datos -->
+    <!-- 3. Mostrar errores -->
+
+    <!-- form Indica un formulario -->
+    <form id="busqueda">
+      <!-- input -> entrada -->
+      <input type="text" name="por-defecto" value="ejemplo" />
+
+      <input type="email" name="email" />
+      <!-- Name le indica al navegador que debe autocompletar con registros previos de lo que se detalle en el nombre-->
+
+      <input type="password" name="password" />
+      <!-- autocierre -->
+    </form>
+
+    <!-- El value de todo input es su valor que puede ir cambiando. Se puede visualizar o no -->
+
+    <form id="chat">
+      <h2>Todos los inputs</h2>
+      <p>button</p>
+      <input type="button" value="Boton" />
+
+      <p>checkbox</p>
+      <input type="checkbox" />
+      <p>color</p>
+      <input type="color" />
+      <p>date</p>
+      <input type="date" />
+      <p>datetime local</p>
+      <input type="datetime-local" />
+      <p>email</p>
+      <input type="email" />
+      <p>file</p>
+      <input type="file" />
+      <p>hidden</p>
+      <input type="hidden" />
+      <p>image</p>
+      <input type="image" />
+      <p>month</p>
+      <input type="month" />
+      <p>number</p>
+      <input type="number" />
+      <p>password</p>
+      <input type="password" placeholder="aca va la contraseña" />
+      <p>radio</p>
+      <input type="radio" name="radio" value="A" />
+      <input type="radio" name="radio" value="B" />
+      <input type="radio" name="radio" value="C" />
+      <p>range</p>
+      <input type="range" step="50" min="0" max="500" />
+      <p>reset</p>
+      <input type="reset" />
+      <p>search</p>
+      <input type="search" />
+      <p>submit</p>
+      <input type="submit" />
+      <p>tel</p>
+      <input type="tel" />
+      <p>text</p>
+      <input type="text" />
+      <p>time</p>
+      <input type="time" />
+      <p>url</p>
+      <input type="url" />
+      <p>week</p>
+      <input type="week" />
+
+      <!-- Otros -->
+      <p>textarea</p>
+      <textarea maxlength="20"></textarea>
+
+      <!-- seleccionar entre opciones / Desplegable -->
+      <select>
+        <option>A</option>
+        <option>B</option>
+        <option>C</option>
+      </select>
+
+      <button>Boton</button>
+
+      <input type="button" value="Boton" />
+    </form>
+
+    <br />
+    <hr />
+
+    <!-- id es un identificador unico POR DOCUMENTO -->
+    <!-- inputs pueden tener name y id. name identifica dentro de un FORMULARIO. Se puede repetir en el documento, no dentro del mismo formulario (excepciones como el radio)-->
+    <form>
+      <h1>Formulario bien hecho</h1>
+
+      <!-- Label -> Etiqueta -->
+      <!-- A trevés del atributo ID de un input, se puede vincular un label con su atributo FOR -->
+      <div>
+        <label for="primer-nombre">Nombre</label>
+        <input id="primer-nombre" type="text" name="firstName" />
+      </div>
+
+      <div>
+        <label>Contraseña</label>
+        <input type="password" name="password" />
+      </div>
+
+      <div>
+        <label>Fecha de nacimiento</label>
+        <input type="date" name="bday" />
+      </div>
+
+      <div>
+        <input type="submit" />
+      </div>
+    </form>
+  </body>
+</html>

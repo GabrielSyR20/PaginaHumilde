@@ -1,0 +1,151 @@
+<html>
+    <head>
+        <title>Etiquetas HTML</title>
+    </head>
+        <!--ENCABEZADOS-->
+        <h1>Header 1 -> encabezado 1</h1>
+        <h2>Header 2 -> encabezado 2</h2>
+        <h3>Header 3 -> encabezado 3</h3>
+        <h4>Header 4 -> encabezado 4</h4>
+        <h5>Header 5 -> encabezado 5</h5>
+
+        <!--PARAGRAFOS-->
+        <p id="Parrafo">Parrafo 1 ............. PENSADO PARA TEXTOS LARGOS</p>
+
+        <!-- PESO A LAS PALABRAS-->
+        <strong>Texto en negrita</strong>
+        <b>Texto en negrita</b>
+        <i>Texto en cursiva</i>
+        <em>Texto en cursiva</em>
+        <u>Texto subrayado</u>
+        <br>
+        <mark>Texto marcado</mark>
+        <cite>"Texto citado"</cite>
+        <abbr title="UNIVERSIDAD TECNOLOGICA NACIONAL" >UTN</abbr>
+
+        <!-- BREAK LINE -> SALTO DE LINEA-->
+        <p>Parrafo 13 ............. PENSADO PARA TEXTOS LARGOS</p>
+        <br>
+        <p>Parrafo 22 ............. PENSADO PARA TEXTOS LARGOS</p>
+
+        <!-- LISTADOS-->
+        <!-- LI LIST ITEM->
+        <li></li> elementos de listados desordenados (Mal Hecho)-->
+        <li>Elemento 1</li>
+        <li>Elemento 2</li> 
+        <li>Elemento 3</li>
+
+        <ol> <!-- ORDERED LIST -> LISTA ORDENADA-->
+            <li>Elemento 1</li>
+            <li>Elemento 2</li> 
+            <li>Elemento 3</li>
+        </ol>
+
+        <ol type="A"> <!-- ORDERED LIST -> LISTA ORDENADA CON UN TYPE DISTINTO-->
+            <li>Elemento 1</li>
+            <li>Elemento 2</li> 
+            <li>Elemento 3</li>
+        </ol>
+
+        <ol start="5"> <!-- ORDERED LIST -> LISTA ORDENADA CON START QUE EMPIEZA EN DONDE ASIGNAS-->
+            <li>Elemento 1</li>
+            <li>Elemento 2</li> 
+            <ol>
+                    <li>Subelement 1</li>
+                    <li>Subelement 2</li> 
+                    <ol type="i" start="3"><!-- ORDERED LIST -> LISTA ORDENADA CON MULTIPLES ASIGNACIONES-->
+                            <li>otraCosa 1</li>
+                            <li>otraCosa 2</li> 
+                            <li>otraCosa 3</li>
+                    </ol>
+                    <li>Subelement 3</li>
+            </ol>
+            <li>Elemento 3</li>
+        </ol>
+
+        <ul> <!-- UNORDERED LIST -> LISTA DESORDENADA -> contiene a la lista-->
+            <li>Elemento 1</li>
+            <li>Elemento 2</li> 
+            <ul>
+                    <li>Subelement 1</li>
+                    <li>Subelement 2</li> 
+                    <ul><!-- UNORDERED LIST -> LISTA DESORDENADA CON MULTIPLES ASIGNACIONES-->
+                            <li>otraCosa 1</li>
+                            <li>otraCosa 2</li> 
+                            <li>otraCosa 3</li>
+                    </ul>
+                    <li>Subelement 3</li>
+            </ul>
+            <li>Elemento 3</li>
+        </ul>
+
+        <!-- MEDIA / IMAGENES / VIDEO / AUDIO -->
+        <!-- NO NECESITA ETIQUETA DE CIERRE </IMG> -->
+        <!-- ruta ABSOLUTA -->
+        <img src="https://www.skincancer.org/wp-content/uploads/Poop-emoji-scaled.jpg" width="200"/>
+        <!-- ruta RELATIVA -->
+        <img src="./Imagenes/cj.jpg" />
+        <img src="./Imagenes/cj.jpg" width="150"/>
+
+        <!--  LINKS -> a -> attachment  -->
+        <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Link a video random</a>
+        <br>
+        <a href="./index.html">Index carpeta</a>
+        <a href="./etiquetas.html#Parrafo" >Link a parrafo 1</a>
+        <video src="./Videos/video.mp4" controls>        </video>
+        <hr />
+        <a href="https://www.maximus.com.ar/" aria-label="Maximus - Ir al Inicio"> ir a maximus</a>
+
+        <!-- ESTRUCTURA -->
+        <main> 
+            <strong>MAIN</strong>
+            <p>Contenido principal de la pagina</p>
+        </main>
+        <section> 
+            <strong>SECTION</strong>
+            <p>Contenido de la seccion</p>
+        </section>
+        <nav> 
+            <strong>NAV</strong>
+            <p>Contenido de la navegacion</p>
+        </nav>
+        <header> 
+            <strong>HEADER</strong>
+            <p>Contenido del encabezado</p>
+        </header>
+        <div> <!--div es sematica-->
+            <strong>DIV</strong>
+            <p>Contenido del div</p>
+        </div>
+        <article> 
+            <strong>ARTICLE</strong>
+            <p>Contenido del articulo</p>
+        </article>
+        <aside> 
+            <strong>ASIDE</strong>
+            <p>Contenido del aside</p>
+        </aside>
+        <footer> 
+            <strong>FOOTER</strong>
+            <p>Contenido del pie de pagina</p>
+        </footer>
+        <menu> 
+            <strong>MENU</strong>
+            <p>Contenido del menu</p>
+        </menu>
+        <details> 
+            <strong>DETALLES</strong>
+            <p>Contenido del detalle</p>
+        </details>
+        <span>  <!--span inline en la misma linea-->
+            <strong>SPAN</strong>
+            <p>Contenido del span</p>
+            <span>Contenido del span dentro del span</span>
+            <span style="color: blue;">Contenido del span dentro del span2</span>
+        </span>
+        <br>
+        <code>
+            console.log("Hola Mundo");
+        </code>
+    </body>
+</html>
