@@ -1,0 +1,34 @@
+html {
+    height: 100%;
+}
+
+body{
+    height: 100%;
+    display: grid;
+    margin: 0;
+
+    grid-template-rows: 120px auto 400px;
+
+}
+
+header{
+    background-color: #111111;
+    grid-row: 1;
+}
+
+main{
+    background-color: #1a1a1a;
+}
+
+footer{
+    background-color: #141414;
+    grid-row: 3;
+
+}
+
+.HeaderMain{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
