@@ -13,11 +13,11 @@ body{
 
 header{
     background-color: #111111;
-    grid-row: 1;
+    grid-row: 1;  
 }
 
 main{
-    background-color: #1a1a1a;
+    background-color: #242424;
 }
 
 footer{
@@ -30,5 +30,21 @@ footer{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    
+    padding: 10px 250px;
+}
+.HeaderNav{
+    background-color: rgb(26, 26, 26);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 250px;
+}
+.nav-separador::after{
+    content: "|";
+    margin: 0 5px;
+    color: rgb(122, 122, 122);
+}
+.LetrasHeader{
+    padding: 5px;
+    color: rgb(168, 168, 168);
 }
