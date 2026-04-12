@@ -8,7 +8,6 @@ body{
     margin: 0;
 
     grid-template-rows: 120px auto 400px;
-
 }
 
 header{
@@ -23,7 +22,12 @@ main{
 footer{
     background-color: #141414;
     grid-row: 3;
+}
 
+footer span{
+    display: flex;
+    color: rgb(124, 124, 124);
+    padding-top: 10px;
 }
 
 .HeaderMain{
@@ -47,4 +51,41 @@ footer{
 .LetrasHeader{
     padding: 5px;
     color: rgb(168, 168, 168);
+}
+
+
+
+.footer-inner{
+    display: grid;
+    justify-content: center;
+    /*grid-template-columns: repeat(5, 1fr);*/
+    grid-template-columns: 20% 15% 15% 15% auto;
+    padding: 40px 300px;
+    grid-gap: 30px;
+}
+
+.footer-title{
+    margin: 0 0 14px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.07);
+    color: #ffffff;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+}
+
+.footer-links{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.footer-line{
+    margin: 36px 350px;
+    border: 1px solid rgba(255, 255, 255, 0.07);
+}
+
+#LetrasFooter{
+    color: rgb(124, 124, 124);
+    font-size: 14px;
 }
