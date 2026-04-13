@@ -33,9 +33,15 @@ footer span{
 h2{
     color: #ffffff;
 }
+
 article{
     background-color: #1d1d1d;
 }
+
+a{
+    text-decoration: none;
+}
+
 .HeaderMain{
     display: flex;
     justify-content: space-between;
@@ -101,6 +107,7 @@ article{
     display: flex;
     justify-content: space-between;
     flex-direction:row;
+    gap: 25px;
 }
 
 .titulo-producto{
@@ -154,7 +161,7 @@ article{
     justify-content: space-between;
 }
 
-#LetrasFooter{
+.LetrasFooter{
     color: rgb(124, 124, 124);
     font-size: 15px;
 }
@@ -171,7 +178,7 @@ article{
     background-color: rgb(51, 51, 51);
 
     position:absolute;
-    right: 18%;
+    right: 16%;
     bottom: -300px;
 }
 
@@ -199,4 +206,22 @@ article{
     justify-content: center;
     font-size:x-large;
     color: #ffffff;
+}
+
+#font-verde{
+    color: rgb(0, 255, 0);
+}
+
+#palabras-main{
+    display: flex;
+    gap: 10px;
+}
+
+.HeaderNav a:hover{
+    border-radius: 5px;
+    background-color: rgb(41, 41, 41);
+}
+
+.footer-links a:hover{
+    color: rgb(0, 255, 0);
 }
