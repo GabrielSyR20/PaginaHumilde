@@ -27,7 +27,7 @@ footer{
 footer span{
     display: flex;
     color: rgb(124, 124, 124);
-    padding-top: 10px;
+    padding-top: 12px;
 }
 
 h2{
@@ -82,7 +82,7 @@ article{
     grid-template-columns: repeat(3, 1fr);
     gap: 10px;
 }
-.titulo-main-top, .main-top-image, .titulo-main-mid, .productos-main{
+.titulo-main-top, .main-top-image, .titulo-main-mid, .productos-main, .footer-button{
     padding: 0px 18%;
 }
 
@@ -145,8 +145,13 @@ article{
 }
 
 .footer-line{
-    margin: 36px 350px;
+    margin: 10px 350px;
     border: 1px solid rgba(255, 255, 255, 0.07);
+}
+
+.footer-button{
+    display: flex;
+    justify-content: space-between;
 }
 
 #LetrasFooter{
@@ -157,4 +162,41 @@ article{
 #image-top{
     width: 100%;
     height: 150px;
+}
+
+#boton-flotante-derecha{
+    width: 55px;
+    height: 55px;
+    border-radius: 5px;
+    background-color: rgb(51, 51, 51);
+
+    position:absolute;
+    right: 18%;
+    bottom: -300px;
+}
+
+#boton-flotante-derecha{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size:x-large;
+    color: #ffffff;
+}
+#boton-flotante-izquierda{
+    width: 55px;
+    height: 55px;
+    border-radius: 5px;
+    background-color: rgb(51, 51, 51);
+
+    position:absolute;
+    right: 81%;
+    bottom: -300px;
+}
+
+#boton-flotante-izquierda{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size:x-large;
+    color: #ffffff;
 }
