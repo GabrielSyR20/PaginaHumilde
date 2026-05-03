@@ -55,7 +55,7 @@
     text-align: center;
 }
 
-#LetrasInicio{
+#LetrasInicio, #mensajeError{
     color: rgb(117, 117, 117);
 }
 #LetrasInicio:hover{
