@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Pagina humilde - Tarea HTML/CSS</title>
     <link rel="stylesheet" href="TareaStyle.css">
     <link rel="stylesheet" href="RegistroStyle.css">
 </head>
@@ -53,7 +53,25 @@
     </header>    
 
     <main>
-        
+        <div class="cuadro-main">
+            <h2>No estás registrado? Por favor, completá tus datos:</h2>
+            <em>Recordá que la persona registrada deberá coincidir con los datos del titular del medio de pago elegido.</em>
+            <br />
+            <hr />
+            <form class="form-registro">
+                <input type="email" placeholder="E-Mail" id="email"/>
+                <input type="password" placeholder="Contraseña" id="password"/>
+                <input type="password" placeholder="Repite tu Contraseña" id="password"/>
+                <br>
+                <br>
+                <input type="number" id="DNI" placeholder="DNI"/>
+                <input type="text" placeholder="Nombre" id="nombre"/>
+                <input type="text" placeholder="Apellido" id="apellido"/>
+                <br>
+                <input type="button" value="Registro"/>
+                <button class="ButtonRegistro">Registro</button>
+            </form>
+        </div>
     </main>
 
     <footer>
@@ -105,5 +123,6 @@
             <a href="#" class="LetrasFooter">Terminos y condiciones</a>
         </div>
     </footer>    
+    <script src="registro.js"></script>
 </body>
 </html>
