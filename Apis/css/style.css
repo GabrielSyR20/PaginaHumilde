@@ -1,0 +1,25 @@
+main{
+    display: grid;
+    grid-template-columns: 10% auto;
+    grid-template-rows: auto auto;
+}
+
+header{
+    grid-row: 1;
+    grid-column: 1/3;
+}
+
+#panel-izquierda{
+    grid-column: 1;
+    grid-row: 2;
+}
+
+#princípal{
+    grid-column: 2;
+    grid-row: 2;
+}
+
+#series{
+    display: flex;
+    flex-direction: row;
+}
