@@ -1,4 +1,4 @@
-class series{
+export class series{
     constructor(id, url, name, lenguage, generes, Image){
         this.id = id;
         this.url = url;
