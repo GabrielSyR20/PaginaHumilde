@@ -1,4 +1,7 @@
 import { series } from "./serie.js";
+const buttonSiguiente = document.getElementById("siguiente");
+const buttonAnterior = document.getElementById("anterior");
+
 
 async function TraerSeries(id) {
     try {
@@ -30,5 +33,21 @@ async function TraerSeries(id) {
         console.log("Error: " + error);
     }
 }
-TraerSeries(1);
+let i = 1;
+do {
+    TraerSeries(i);
+    i++;
+} while (i < 7);
+
+function ObtenerPrimeros(){
+    console.log("Sadasdsada")
+}
+buttonSiguiente.addEventListener("click", (datos) => {
+    datos.preventDefault();
+    ObtenerPrimeros();
+})
+
+buttonAnterior.onclick = (event) => {
+    console.log("briiiiiiiiihhhhhhhhhh")
+}
 //const serie1 = TraerSeries(1);
