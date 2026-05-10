@@ -1,4 +1,7 @@
 import { series } from "./serie.js";
+
+const seriesContainer = document.getElementById("series");
+
 const buttonSiguiente = document.getElementById("siguiente");
 const buttonAnterior = document.getElementById("anterior");
 
@@ -25,29 +28,36 @@ async function TraerSeries(id) {
         );
 
         console.log(serie1.tojsonString());
-        
-        const mainSeries = document.getElementById("series");
-        mainSeries.insertAdjacentElement("beforeend", serie1.createHtmlElement());
+        //const mainSeries = document.getElementById("series");
+        seriesContainer.insertAdjacentElement("beforeend", serie1.createHtmlElement());
 
     } catch (error) {
         console.log("Error: " + error);
     }
 }
-let i = 1;
-do {
-    TraerSeries(i);
-    i++;
-} while (i < 7);
 
-function ObtenerPrimeros(){
-    console.log("Sadasdsada")
+function mostrarSeries(i = 1) {
+    seriesContainer.replaceChildren();
+    for (let index = i; index < i + 6; index++) {
+            TraerSeries(index);
+    }
 }
-buttonSiguiente.addEventListener("click", (datos) => {
-    datos.preventDefault();
-    ObtenerPrimeros();
-})
+mostrarSeries();
 
-buttonAnterior.onclick = (event) => {
-    console.log("briiiiiiiiihhhhhhhhhh")
+let paginaActual = 1;
+
+function PaginaSiguiente(){
+    paginaActual++;
+    mostrarSeries(1 + (paginaActual - 1) * 6);
 }
-//const serie1 = TraerSeries(1);
+
+function PaginaAnterior(){
+    if (paginaActual > 1) {
+        paginaActual--;
+        mostrarSeries(1 + (paginaActual - 1) * 6);
+    }
+}
+
+buttonSiguiente.onclick = PaginaSiguiente;
+
+buttonAnterior.onclick = PaginaAnterior;
