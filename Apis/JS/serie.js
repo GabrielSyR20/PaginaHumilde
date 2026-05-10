@@ -72,11 +72,14 @@ export class series{
     guardarSerie(){
         console.log(this.name);
         let arrayAnteriorString = localStorage.getItem("series");
-
         let array = JSON.parse(arrayAnteriorString);
-
         if (!array) {
         array = [];
+        }
+
+        const serieRepetida = array.some(serie => serie.id === this.id);
+        if(serieRepetida){
+            throw new Error("Serie repetida");
         }
 
         array.push(this);
